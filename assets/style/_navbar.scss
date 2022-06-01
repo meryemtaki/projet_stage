@@ -1,0 +1,53 @@
+// navbar begin
+.top_navbar{
+    
+    // navbar mobile
+    .navbar_mobile{
+        // logo navbar mobile
+        a img{
+            display: none;
+        }
+        // icon menu burger navbar mobile
+        ul{
+            @extend %ul;
+            li{
+                @extend %li;
+                a{
+                    @extend %link_a;
+                    .icon-menu{
+                        display: none;
+                    }
+                
+                }
+            }
+        }
+    }
+    // end navbar mobile
+
+    // begin navbar desktop
+    background-color: transparent;
+    width: 100%;
+    @include flexCenter;
+    background-color: black;
+    .navbar_desktop{
+    // ul menu navbar desktop
+        ul{
+            @extend %ul;
+            @include flexCenter;
+            // li menu navbar desktop
+            li{
+                @extend %li;
+                // a link menu navbar desktop
+                a{
+                    @extend %link_a;
+                    word-spacing: 1.5px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    &:hover{
+                        color: $color_p;
+                    }
+                }
+            }
+        }
+    }
+}

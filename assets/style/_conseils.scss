@@ -1,0 +1,39 @@
+.conseils{
+    padding: 20px 95px 40px;
+
+    .text-center{
+        h2{
+            @extend %title_centre;
+        }
+    }
+
+    .cons_bloc{
+        a{
+            text-decoration: none;
+            .desc{
+                width: 330px;
+                padding: 15px 0 10px 0;
+                h4{
+                    color:#313131;
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+                p{
+                    color: #4c4c4c;
+                }
+                span{
+                    color: $color_red;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    word-spacing: 0.5px;
+                }
+            }
+        }
+    }
+    .btn{
+        @extend %button-a;
+        margin-top: 10px;
+        margin-left: 37%;
+    }
+    
+}

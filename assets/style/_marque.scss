@@ -1,0 +1,29 @@
+.marque{
+    display: inline-block;
+    img{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .txt-marque{
+        margin-top: 15%;
+        width: 40%;
+        float: right;
+        h3{
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        a{
+            @extend %link_a;
+            color: $color_red;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
+

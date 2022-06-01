@@ -1,0 +1,24 @@
+.description{
+    .left-prod{
+        img{
+            width: 100%;
+        }
+    }
+    .right-prod{
+        padding: 65px 10px 45px 40px;
+        font-size: 13px;
+        p{
+            font-weight: 600;
+            color: #777775;
+        }
+        a{
+            color: #605e5e;
+            font-weight: 600;
+            font-size: 14px;
+            @extend %link_a;
+        }
+        .fiche-telecharger{
+            color: $color_red;
+        }
+    }
+}

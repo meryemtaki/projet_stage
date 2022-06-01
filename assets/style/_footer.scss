@@ -1,0 +1,105 @@
+
+.footer-one{
+    background-color: #313131;
+    padding: 70px 0 80px 0;
+        .logo-footer{
+            border-bottom: 1px solid #464646;
+            padding: 0 0 33px 0;
+            display: inline-block;
+        }
+
+        .list-footer{
+            h3{
+                color: #ffffff;
+                font-size: 18px;
+            }
+            ul{
+                @extend %ul;
+                li{
+                    @extend %li;
+                    display: block;
+                    a{
+                        font-size: 13px;
+                        text-decoration: none;
+                        color: #adadad;
+                        &:hover{
+                            color: #6f6f6f;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .title{
+            margin-bottom: 30px;
+            h5{
+                font-size: 18px;
+                color: #ffffff;
+            }
+            p{
+                font-size: 13px;
+                color: #adadad;
+            }
+        }
+    
+
+        .form{
+            margin-bottom: 30px;
+            .ok{
+                position: absolute;
+                height: 48px;
+                background: #fff;
+                color: #da1a35;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 48px;
+                width: 61px;
+                border-color: #fff;
+            }
+            .mail{
+                height: 47px;
+                width: 285px;
+                background-color: #313131;
+                border: 1px solid #fff;
+            }
+        }
+
+        .contact{
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: bold;
+            }
+            span{
+                color: #ffffff;
+                font-size: 12px;
+                margin: 0 10px 0 10px;
+            }
+        }
+}
+
+
+.footer-two{
+    padding: 20px;
+    ul{
+        @extend %ul;
+        text-align: center;
+
+        li{
+            &:first-of-type{
+                font-size: 12px;
+            }
+            @extend %li;
+            margin-right: 3%;
+            a{
+                text-decoration: none;
+                color: #292929;
+                font-weight: 700;
+                font-size: 11px;
+            }
+        }
+    }
+}
+  

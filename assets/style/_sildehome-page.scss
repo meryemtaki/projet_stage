@@ -1,0 +1,82 @@
+.home-page{
+    .slider-wrap1{
+        .slick-list{
+            z-index: -2;
+        }
+        .slide{
+            .slick-prev, .slick-next {
+                width: auto;
+                height: auto;
+                top: 50%;
+                transform: scale(0.6) translateY(-75%);
+                color: transparent;
+                display: inline-block;
+                position: absolute;
+            }
+            .slick-prev{
+                background: transparent;
+                width: 80px;
+                height: 80px;
+                border: none;
+                &::before{
+                    opacity: 1;
+                    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAuUlEQVR4nO3XPUpDYRRF0YWORKxsbByRQ3C0/kzAYECcgTYBQwQreTfy7dUEUjzu2RDII0mSJEmS5VxOH/CLa9xjh4/hWzZ3iz0+8TR8y+aOxy8X4HT8/vDdEk7Hv2n8Ghqv8Y1v/OhFG2q8xjd+6fFL/beHZ2c+/uKfP//sLf8TgBu8+o7wjrvRiwYUQRFQBBQBRUARUAQUAUVAEdC7A35GeJk9Z8ZxhMfhW8Zc4eHwmSRJkiRJ/s4XnzyBkJQuO3oAAAAASUVORK5CYII=");
+                    filter: invert(1);
+                }
+            }
+            .slick-next{
+                background: transparent;
+                width: 80px;
+                height: 80px;
+                border: none;
+                right: 0;
+                &::before{
+                    opacity: 1;
+                    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAuUlEQVR4nO3ZMUoDUQBF0YNZiVjZpHFFLsHlGheQECFkA6LFCAFtM/mBf08z3cx/FwIZhiRJkiRJprNZ+f5PeMUB55WfdZfe8Y1PbAefZYgPS4BpI2wtw6eO8Iy9S4QTXoaeaIAiKAKKgCKgCCgCioAioAgoAnp3wP8IuzUf9rDmza/ka/QBbmnqn8Df8UeNn0PjNb7xjR96ohtqvMY3furxU/23Z3mVnXY8fR73iLffa5IkSZIkuQ8/ZlGCktXxr+oAAAAASUVORK5CYII=");
+                    filter: invert(1);
+                }
+            }
+        }
+        
+        img{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    .homepage-desktop{
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+        top: 0;
+    }
+    .text{
+        float: right;
+        position: relative;
+        margin-top: -45%;
+        width: 35%;
+        h1{
+            color: $colorsecond;
+            text-transform: uppercase;
+            font-family: $font_primary;
+            padding-bottom: 20%;
+        }
+        p{
+            color: $color_p;
+            text-align: end;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-bottom: 20%;
+            span{
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        a{
+            @extend %button-a
+        }
+    }
+}

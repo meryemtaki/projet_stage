@@ -1,0 +1,58 @@
+.catalog_prod{
+    .filter{
+        .wrapper{
+            display: flex;
+            align-items: center;
+            &.end{
+                justify-content: flex-end;
+            }
+            button{
+                padding-left: 20px;
+                border: 0;
+                background: transparent;
+                position: relative;
+                text-transform: uppercase;
+                outline: none;
+                font-weight: 600;
+                &::before{
+                    content: "";
+                    width: 15px;
+                    height: 12px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: url("../media/filter_icon.png") no-repeat;
+                }
+                &.dropdown-toggle{
+                    padding: 0;
+                    margin-left: 2rem;
+                    &::before{
+                        content: none;
+                    }
+                }
+            }
+            .breadcrumb{
+                padding: 0;
+                margin: 0 0 0 2rem;
+                line-height: 1;
+                align-items: center;
+                background: transparent;
+                font-size: 12px;
+                color: #605e5e;
+                a{
+                    margin: 0 5px;
+                    color: #605e5e;
+                }
+                p{
+                    margin: 0 0 0 5px;
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #605e5e;
+                margin: 0;
+            }
+        }
+    }
+}

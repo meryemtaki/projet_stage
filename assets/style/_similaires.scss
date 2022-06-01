@@ -1,0 +1,68 @@
+.similaires{
+    display: grid;
+    background: #f9f9f9;   
+     padding: 40px 40px 40px;
+     .text-center{
+         margin-bottom: 5%;
+         h2{
+             text-transform: uppercase;
+             font-weight: 700;
+         }
+     }
+    .simil_prod{
+        a{
+            text-decoration: none;
+            img{
+                z-index: 1;
+                position: relative;
+            }
+            .desc{
+                padding-top: 1rem;
+                margin-top: -3rem;
+                z-index: 0;
+                position: relative;
+                background: #f9f9f9;
+                p{
+                    color: #313131;
+                }
+                .plus{
+                    position: relative;
+                    text-transform: uppercase;
+                    color: $color_red;
+                    font-weight: 700;
+                    font-size: 14px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .3s ease-in-out;
+                    span{
+                        margin-right: 5px;
+                    }
+                    &:first-of-type{
+                        text-align: center;
+                    }
+                }
+                h4{
+                    color: $color_red;
+                }
+            }
+            &:hover{
+                .desc{
+                    z-index: 2;
+                    h4{
+                        display: none;
+                    }
+                    .plus{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        @extend %button-a;
+        margin-top: 10px;
+        margin-left: 37%;
+    }
+}
+
